@@ -1,0 +1,348 @@
+﻿<?xml version="1.0" encoding="utf-8"?>
+<root>
+  <!-- 
+    Microsoft ResX Schema 
+    
+    Version 2.0
+    
+    The primary goals of this format is to allow a simple XML format 
+    that is mostly human readable. The generation and parsing of the 
+    various data types are done through the TypeConverter classes 
+    associated with the data types.
+    
+    Example:
+    
+    ... ado.net/XML headers & schema ...
+    <resheader name="resmimetype">text/microsoft-resx</resheader>
+    <resheader name="version">2.0</resheader>
+    <resheader name="reader">System.Resources.ResXResourceReader, System.Windows.Forms, ...</resheader>
+    <resheader name="writer">System.Resources.ResXResourceWriter, System.Windows.Forms, ...</resheader>
+    <data name="Name1"><value>this is my long string</value><comment>this is a comment</comment></data>
+    <data name="Color1" type="System.Drawing.Color, System.Drawing">Blue</data>
+    <data name="Bitmap1" mimetype="application/x-microsoft.net.object.binary.base64">
+        <value>[base64 mime encoded serialized .NET Framework object]</value>
+    </data>
+    <data name="Icon1" type="System.Drawing.Icon, System.Drawing" mimetype="application/x-microsoft.net.object.bytearray.base64">
+        <value>[base64 mime encoded string representing a byte array form of the .NET Framework object]</value>
+        <comment>This is a comment</comment>
+    </data>
+                
+    There are any number of "resheader" rows that contain simple 
+    name/value pairs.
+    
+    Each data row contains a name, and value. The row also contains a 
+    type or mimetype. Type corresponds to a .NET class that support 
+    text/value conversion through the TypeConverter architecture. 
+    Classes that don't support this are serialized and stored with the 
+    mimetype set.
+    
+    The mimetype is used for serialized objects, and tells the 
+    ResXResourceReader how to depersist the object. This is currently not 
+    extensible. For a given mimetype the value must be set accordingly:
+    
+    Note - application/x-microsoft.net.object.binary.base64 is the format 
+    that the ResXResourceWriter will generate, however the reader can 
+    read any of the formats listed below.
+    
+    mimetype: application/x-microsoft.net.object.binary.base64
+    value   : The object must be serialized with 
+            : System.Runtime.Serialization.Formatters.Binary.BinaryFormatter
+            : and then encoded with base64 encoding.
+    
+    mimetype: application/x-microsoft.net.object.soap.base64
+    value   : The object must be serialized with 
+            : System.Runtime.Serialization.Formatters.Soap.SoapFormatter
+            : and then encoded with base64 encoding.
+
+    mimetype: application/x-microsoft.net.object.bytearray.base64
+    value   : The object must be serialized into a byte array 
+            : using a System.ComponentModel.TypeConverter
+            : and then encoded with base64 encoding.
+    -->
+  <xsd:schema id="root" xmlns="" xmlns:xsd="http://www.w3.org/2001/XMLSchema" xmlns:msdata="urn:schemas-microsoft-com:xml-msdata">
+    <xsd:import namespace="http://www.w3.org/XML/1998/namespace" />
+    <xsd:element name="root" msdata:IsDataSet="true">
+      <xsd:complexType>
+        <xsd:choice maxOccurs="unbounded">
+          <xsd:element name="metadata">
+            <xsd:complexType>
+              <xsd:sequence>
+                <xsd:element name="value" type="xsd:string" minOccurs="0" />
+              </xsd:sequence>
+              <xsd:attribute name="name" use="required" type="xsd:string" />
+              <xsd:attribute name="type" type="xsd:string" />
+              <xsd:attribute name="mimetype" type="xsd:string" />
+              <xsd:attribute ref="xml:space" />
+            </xsd:complexType>
+          </xsd:element>
+          <xsd:element name="assembly">
+            <xsd:complexType>
+              <xsd:attribute name="alias" type="xsd:string" />
+              <xsd:attribute name="name" type="xsd:string" />
+            </xsd:complexType>
+          </xsd:element>
+          <xsd:element name="data">
+            <xsd:complexType>
+              <xsd:sequence>
+                <xsd:element name="value" type="xsd:string" minOccurs="0" msdata:Ordinal="1" />
+                <xsd:element name="comment" type="xsd:string" minOccurs="0" msdata:Ordinal="2" />
+              </xsd:sequence>
+              <xsd:attribute name="name" type="xsd:string" use="required" msdata:Ordinal="1" />
+              <xsd:attribute name="type" type="xsd:string" msdata:Ordinal="3" />
+              <xsd:attribute name="mimetype" type="xsd:string" msdata:Ordinal="4" />
+              <xsd:attribute ref="xml:space" />
+            </xsd:complexType>
+          </xsd:element>
+          <xsd:element name="resheader">
+            <xsd:complexType>
+              <xsd:sequence>
+                <xsd:element name="value" type="xsd:string" minOccurs="0" msdata:Ordinal="1" />
+              </xsd:sequence>
+              <xsd:attribute name="name" type="xsd:string" use="required" />
+            </xsd:complexType>
+          </xsd:element>
+        </xsd:choice>
+      </xsd:complexType>
+    </xsd:element>
+  </xsd:schema>
+  <resheader name="resmimetype">
+    <value>text/microsoft-resx</value>
+  </resheader>
+  <resheader name="version">
+    <value>2.0</value>
+  </resheader>
+  <resheader name="reader">
+    <value>System.Resources.ResXResourceReader, System.Windows.Forms, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b77a5c561934e089</value>
+  </resheader>
+  <resheader name="writer">
+    <value>System.Resources.ResXResourceWriter, System.Windows.Forms, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b77a5c561934e089</value>
+  </resheader>
+  <data name="richTextBox4.Text" xml:space="preserve">
+    <value>    所谓动能，简单的说就是指物体因运动而具有的能量。数值上等于（1/2）Mv^2。
+    动能是能量的一种，它的国际单位制下单位是焦耳(J)，简称焦。 
+    需要注意的是，动能（以及和它相对应的各种功），都是标量，即只有大小而不存在方向。
+    求和时只计算其代数和，不满足矢量（数学中称向量）加法的平行四边形法则。
+    做功：WT=1/2(m * vi^2)-1/2(m * vf^2)
+    这里：
+        WT = 总功
+        m =质量,
+        vi =初始速度
+        vf =最终速度。</value>
+  </data>
+  <data name="richTextBox2.Text" xml:space="preserve">
+    <value>    物体加速度的大小跟物体受到的作用力成正比，跟物体的质量成反比，加速度的方向跟合外力的方向相同。 
+    而以物理学的观点来看，牛顿运动第二定律亦可以表述为“物体随时间变化之动量变化率和所受外力之和成正比”，即动量对时间的一阶导数等于外力之和。
+    牛顿第二定律说明了在宏观低速下，比例式表达：a∝F/m，F∝ma；用数学表达式可以写成F=kma，其中的k为比例系数，是一个常数。
+    但由于当时没有规定多大的力作为力的单位，比例系数k的选取就有一定的任意性，如果取k=1，就有F=ma，这就是今天我们熟知的牛顿第二定律的数学表达式。
+    力：F＝M*A
+    质量：M=F/A
+    加速度：A=F/M</value>
+  </data>
+  <data name="richTextBox8.Text" xml:space="preserve">
+    <value>    所谓动能，简单的说就是指物体因运动而具有的能量。数值上等于（1/2）Mv^2。
+    动能是能量的一种，它的国际单位制下单位是焦耳(J)，简称焦。 
+    需要注意的是，动能（以及和它相对应的各种功），都是标量，即只有大小而不存在方向。
+    求和时只计算其代数和，不满足矢量（数学中称向量）加法的平行四边形法则。
+    动能定理
+    公式： Ek = ½ mv2
+    质量： m = Ek / ½ v2
+    速度：v2=2Ek / m</value>
+  </data>
+  <data name="richTextBox9.Text" xml:space="preserve">
+    <value>    物体由于被举高而具有的能叫做重力势能(gravitational potential energy)。
+    对于重力势能，其大小由地球和地面上物体的相对位置决定。
+    物体质量越大、位置越高、做功本领越大，物体具有的重力势能就越大，其表达式为：Ep=mgh。
+    重力势能
+    公式：Ep = m x g x h
+    m = 质量
+    g = 重力加速度
+    h = 高度</value>
+  </data>
+  <data name="richTextBox11.Text" xml:space="preserve">
+    <value>    向心力（centripetal force），是使质点（或物体）作曲线运动时所需的指向曲率中心（圆周运动时即为圆心）的力。
+    产生离心现象的原因是向心力不足。
+    物体做圆周运动时，沿半径指向圆心方向的外力（或外力沿半径指向圆心方向的分力）称为向心力，又称法向力。是由合外力提供或充当的向心力。
+    另外，群体凝聚力意义上的向心力来源于群体领导的指挥权威和待下态度相结合的对立统一体。
+    向心力计算：
+    向心力：f=mv2 / r
+    这里
+    m = 质量，r = 半径，v = 速度。</value>
+  </data>
+  <data name="richTextBox12.Text" xml:space="preserve">
+    <value>    圆周运动的快慢可以用物体通过的弧长与所用时间的比值来度量。
+    若物体由M向N运动，某时刻t经过A点。为了描述经过A点附近时运动的快慢，可以从此刻开始，取一段很短的时间△t，物体在这段时间内由A运动到B，通过的弧长为△L。比值△l/△t反映了物体运动的快慢，叫做线速度，用v表示，即v=△L/△t。 线速度也有平均值和瞬时值之分。
+    如果所取的时间间隔很小很小，这样得到的就是瞬时线速度。
+    注意，当△t足够小时，圆弧AB几乎成了直线，AB弧的长度与AB线段的长度几乎没有差别，此时，△l也就是物体由A到B的位移。因此，这里的v其实就是直线运动中的瞬时速度，不过如今用来描述圆周运动而已。
+    线速度是矢量，有大小和方向，做圆周运动的物体，它的线速度方向时刻改变，并始终指向该点的切线方向。
+    圆周线速度计算器：
+    线速度：V = 2*PI*r / T
+    这里：
+    r = 半径
+    T = 时间周期</value>
+  </data>
+  <data name="richTextBox17.Text" xml:space="preserve">
+    <value>  G = 引力常数 = 6.67408 x 10-11N-m2/kg2
+    万有引力定律(Law of universal gravitation)是艾萨克·牛顿爵士(Sir Isaac Newton)在1687年于《自然哲学的数学原理》上发表的解释物体之间相互作用的引力的定律。
+    定律内容如下：任意两个质点通过连心线方向上的力相互吸引。该引力的大小与它们的质量乘积成正比，与它们距离的平方成反比，与两物体的化学本质或物理状态以及中介物质无关，公式表示：F=G*M1M2/（R*R）（G=6.67×10^-11N·m^2/kg^2）。
+    牛顿在前人（开普勒(J.Kepler)、胡克(R.Hooke)、雷恩(C.Wyen)、哈雷(E.Halley)）研究的基础上，凭借他超凡的数学能力证明，在1687年于《自然哲学的数学原理》上发表了万有引力定律。
+    万有引力定律的发现，是17世纪自然科学最伟大的成果之一。
+    牛顿万有引力定律
+    万有引力：F = Gm1m2/r2
+    这里
+    G = 引力常数 = 6.67408 x 10-11N-m2/kg2
+    m1 =物体1质量
+    m2 =物体2质量
+    r = 两物体距离</value>
+  </data>
+  <data name="richTextBox18.Text" xml:space="preserve">
+    <value>  G = 引力常数 = 6.67408 x 10-11N-m2/kg2
+    开普勒第三定律（Kepler's third law of planetary motion）又称周期定律，是指绕以太阳为焦点的椭圆轨道运行的所有行星，其椭圆轨道半长轴的立方与周期的平方之比是一个常量。
+    常用于椭圆轨道的计算。
+    开普勒第三定律行星运动定律
+    卫星轨道周期
+    T = sqrt(4*PI2*r3/GM)
+    这里
+    G = 引力常数 = 6.67408 x 10-11N-m2/kg2
+    r = 卫星轨道平均半径
+    M = 卫星质量</value>
+  </data>
+  <data name="richTextBox20.Text" xml:space="preserve">
+    <value>  G = 引力常数 = 6.67408 x 10-11N-m2/kg2
+    逃逸速度（Velocity of Escape）：在星球表面垂直向上射出一物体，若初速度小于某一值，该物体将仅上升一段距离，之后由星球引力产生的加速度将最终使其下落。
+    若初速度达到某一值，该物体将完全逃脱星球的引力束缚而飞出该星球。
+    需要使物体刚刚好逃脱星球引力的这一速度叫逃逸速度。
+    天体表面上物体摆脱该天体万有引力的束缚飞向宇宙空间所需的最小速度。
+    例如，地球的逃逸速度为11.2公里/秒（即第二宇宙速度）。
+    逃逸速度
+    逃逸速度：Ve2=2GM / R
+    这里：
+    M =行星质量
+    R = 行星半径</value>
+  </data>
+  <data name="richTextBox25.Text" xml:space="preserve">
+    <value>    动力学的普遍定理之一。
+    内容为物体动量的增量等于它所受合外力的冲量即Ft=Δvm，或所有外力的冲量的矢量和。
+    如果一个系统不受外力或所受外力的矢量和为零，那么这个系统的总动量保持不变，这个结论叫做动量守恒定律。
+    动量守恒定律是自然界中最重要最普遍的守恒定律之一，它既适用于宏观物体，也适用于微观粒子；既适用于低速运动物体，也适用于高速运动物体，它是一个实验规律，也可用牛顿第二定律和运动学公式推导出来。
+    动量：ΔM＝ m*Δv
+    这里
+    ΔM = 动量变化
+    m = 质量
+    Δv = 速度变化</value>
+  </data>
+  <data name="richTextBox26.Text" xml:space="preserve">
+    <value>    动力学的普遍定理之一。
+    内容为物体动量的增量等于它所受合外力的冲量即Ft=Δvm，或所有外力的冲量的矢量和。
+    如果一个系统不受外力或所受外力的矢量和为零，那么这个系统的总动量保持不变，这个结论叫做动量守恒定律。
+    动量守恒定律是自然界中最重要最普遍的守恒定律之一，它既适用于宏观物体，也适用于微观粒子；既适用于低速运动物体，也适用于高速运动物体，它是一个实验规律，也可用牛顿第二定律和运动学公式推导出来。
+    动量：ΔM＝ m*Δv
+    这里
+    ΔM = 动量变化
+    m = 质量
+    Δv = 速度变化</value>
+  </data>
+  <data name="richTextBox28.Text" xml:space="preserve">
+    <value>    用一根绝对挠性且长度不变、质量可忽略不计的线悬挂一个质点，在重力作用下在铅垂平面内作周期运动，就成为单摆。
+    单摆在摆角小于5°（现在一般认为是小于10°）的条件下振动时，可近似认为是简谐运动。
+    单摆运动的周期公式：T=2π√(L/g).其中L指摆长，g是当地重力加速度。
+    周期：T^2=4 * PI^2 * L / g
+     T = 周期
+    L = 摆长
+    g = 重力加速度</value>
+  </data>
+  <data name="richTextBox31.Text" xml:space="preserve">
+    <value>    在物理学中，密度用符号ρ（读作ròu）。
+    国际主单位为单位 为kg/m³，常用单位还有g/cm³。
+    其数学表达式为ρ=m/V。
+    在国际单位制中，质量的主单位是千克，体积的主单位是立方米，于是取1立方米物质的质量作为物质的密度。
+    对于非均匀物质则称为“平均密度”。
+    密度计算：
+    密度：d=m/v
+    d = 密度，
+    m = 质量，
+    v = 体积</value>
+  </data>
+  <data name="richTextBox32.Text" xml:space="preserve">
+    <value>    c=299792.458km/s
+    爱因斯坦著名的质能方程式E=mc^2，E表示能量，m代表质量，而c则表示光速。
+    相对论的一个重要结果是质量与能量的关系。
+    质量和能量是不可互换的，是建立在狭义相对论基础上，1915年他提出了广义相对论。
+    因为在经典力学中，质量和能量之间是相互独立、没有关系的，但在相对论力学中，能量和质量是可互换的。
+    爱因斯坦1905年6月发表的论文《关于光的产生和转化的一个启发性观点》，解释了光的本质，这也使他于1921年荣获了诺贝尔物理学奖。
+    爱因斯坦质能方程
+    能量：E = mc2
+    E = 能量
+    m = 质量
+    c = 光速</value>
+  </data>
+  <data name="richTextBox33.Text" xml:space="preserve">
+    <value>    压强是分布在特定作用面上之力量与该面积的比值。
+    换句话说，压强是作用在与物体表面垂直方向上的每单位面积的力量大小。
+    也是表示压力作用效果（形变效果）的物理量。
+    在国际单位制中，压强的单位是帕斯卡，简称帕（这是为了纪念法国科学家帕斯卡Blaise pascal而命名的），即牛顿/平方米。
+    压强的常用单位有千帕、千克力/平方厘米、托。一般以英文字母「Pa」表示。
+    计算公式为p=F/A，即压强=压力（垂直作用力）/受力面积
+    压强：S＝F/A
+    S = 压强，
+    F = 力，
+    A = 面积.</value>
+  </data>
+  <data name="richTextBox34.Text" xml:space="preserve">
+    <value>    杨氏模量(Young's modulus)是描述固体材料抵抗形变能力的物理量。
+    一条长度为L、截面积为S的金属丝在力F作用下伸长ΔL。
+    F/S叫应力，其物理意义是金属丝单位截面积所受到的力；ΔL/L叫应变，其物理意义是金属丝单位长度所对应的伸长量。
+    应力与应变的比叫弹性模量：即。ΔL是微小变化量。
+    杨氏模量：Y＝ S / St
+    Y = 杨氏模量
+    S = 正向应力
+    St = 正向应变</value>
+  </data>
+  <data name="richTextBox37.Text" xml:space="preserve">
+    <value>    物体以一定的初速度沿水平方向抛出，如果物体仅受重力作用，这样的运动叫做平抛运动。
+    平抛运动可看作水平方向的匀速直线运动以及竖直方向的自由落体运动的合运动。
+    平抛运动的物体，由于所受的合外力为恒力，所以平抛运动是匀变速曲线运动,平抛物体的运动轨迹为一抛物线。
+    平抛运动是曲线运动 平抛运动的时间仅与抛出点的竖直高度有关；物体落地的水平位移与时间（竖直高度）及水平初速度有关。
+    平抛运动水平位移：Δx = Vx0t
+    Δx = 水平位移
+    Vx0 = 初始速度
+    t = 时间</value>
+  </data>
+  <data name="richTextBox38.Text" xml:space="preserve">
+    <value>    位移距离：R = V^2*sin2θ/g
+    V = 初始速度
+    g = 重力加速度
+    θ = 速度与水平面夹角
+    根据运动独立性原理,可以把斜抛运动看成是作水平方向的匀速直线运动和竖直上抛运动的合运动来处理或沿V0方向的直线运动和自由落体运动的合运动。
+    斜抛运动的三要素是射程、射高和飞行时间。
+    斜抛运动有斜上抛和斜下抛之分，一般的，若不指明，我们都默认是斜上抛。
+    斜抛运动水平方向做匀速直线运动，竖直方向做竖直上抛运动。</value>
+  </data>
+  <data name="richTextBox39.Text" xml:space="preserve">
+    <value>    声压级以符号SPL表示，其定义为将待测声压有效值p(e)与参考声压p(ref)的比值取常用对数，再乘以20，即：
+    SPL=20LOG(10)[p(e)/p(ref)]
+    其单位是分贝（dB）。
+    在空气中参考声压p(ref）一般取为2*10E-5帕，这个数值是正常人耳对1千赫声音刚刚能觉察其存在的声压值，也就是1千赫声音的可听阈声压。一般讲，低于这一声压值，人耳就再也不能觉察出这个声音的存在了。
+    显然该可听阈声压的声压级即为零分贝。
+    声压级(SPL)：
+    SPL ＝ 20log10(P/Pref)
+    SPL = 声压级(SPL)
+    P = 声压有效值
+    Pref = 参考声压</value>
+  </data>
+  <data name="richTextBox40.Text" xml:space="preserve">
+    <value>    声强级
+    在心理物理学中，把单位时间内通过垂直于声波传播方向的单位面积的平均声能，称为声强。声强用I表示，单位为瓦/平米。
+    心理物理学的研究表明，人对声音强弱的感觉并不是与声强成正比，而是与其对数成正比的。
+    这正是人们使用声强级来表示声强的原因。
+    其单位为贝尔声强级（贝尔，Ｂｅｌ）
+    Ｌ＝ｌｏｇ （１０）［Ｉ／Ｉ０］＝ｌｇ（Ｉ/Ｉ０）
+    一般人对强度相差十分之一贝尔的两个声音便可区别出来，因此用贝尔的十分之一来作为声强的单位则更为方便，这个单位称为分贝尔（decibel），简称分贝（dB），即
+    ＳＩＬ＝１０ｌｏｇ（１０）［Ｉ／Ｉ０］＝１０ｌｇ（Ｉ／Ｉ０）
+    式中Ｉ为声强，Ｉ０=10^-12 瓦/平米称为基准声强，声强级的常用单位是分贝（dB）。
+    声强级：
+    声强级计算：SIL ＝10log10(I/I0)
+    IL = 声强级
+    I = 声强
+    I0 = 参考声强</value>
+  </data>
+</root>
