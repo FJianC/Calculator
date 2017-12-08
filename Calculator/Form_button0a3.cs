@@ -192,6 +192,7 @@ namespace Calculator
         }
         private void 清空ToolStripMenuItem_Click(object sender, EventArgs e)
         {
+            textBox1.Text = "";
             clear = false;
             for (int i = 0; i < used.Length; i++)
             {
@@ -213,14 +214,29 @@ namespace Calculator
                 case 6: zhishu(); break;
                 case 7: duishu(); break;
             }
+            XY();
         }
         private void textBox1_KeyPress(object sender, KeyPressEventArgs e)
         {
             try
             {
-                if (e.KeyChar == Convert.ToChar(Keys.Enter) && textBox1.Text != "" && flag > 0)
+                if (e.KeyChar == Convert.ToChar(Keys.Enter) && flag > 0)
                 {
                     e.Handled = true;//关闭回车声音
+                    XY();
+                }
+            }
+            catch
+            {
+                MessageBox.Show("输入错误！");
+            }
+        }//输入x计算y
+        private void XY()
+        {
+            try
+            {
+                if (textBox1.Text != "")
+                {
                     double x = Convert.ToDouble(textBox1.Text);
                     double y = 0;
                     switch (flag)
@@ -234,9 +250,34 @@ namespace Calculator
                         case 7: y = a * Math.Log(b, x) + c; break;
                     }
                     textBox2.Text = y.ToString("F2");
-                    XY(x, y);
+                    foreach (Series ser in chart1.Series)
+                        if (ser.Name == "X")
+                        {
+                            chart1.Series.Remove(ser);
+                            break;
+                        }
+                    foreach (Series ser in chart1.Series)
+                        if (ser.Name == "Y")
+                        {
+                            chart1.Series.Remove(ser);
+                            break;
+                        }
+                    Series X = new Series();
+                    Series Y = new Series();
+                    for (float i = (float)chart1.ChartAreas[0].AxisY.Minimum; i <= chart1.ChartAreas[0].AxisX.Maximum; i += 0.01f)
+                        X.Points.AddXY(i, y);
+                    for (float i = (float)chart1.ChartAreas[0].AxisY.Minimum; i <= chart1.ChartAreas[0].AxisY.Maximum; i += 0.01f)
+                        Y.Points.AddXY(x, i);
+                    X.Name = "X";
+                    Y.Name = "Y";
+                    X.Color = Color.Black;
+                    Y.Color = Color.Black;
+                    X.ChartType = SeriesChartType.Spline;
+                    Y.ChartType = SeriesChartType.Spline;
+                    chart1.Series.Add(X);
+                    chart1.Series.Add(Y);
                 }
-                if (e.KeyChar == Convert.ToChar(Keys.Enter) && textBox1.Text == "")
+                else
                 {
                     textBox2.Text = "";
                     foreach (Series ser in chart1.Series)
@@ -252,42 +293,6 @@ namespace Calculator
                             break;
                         }
                 }
-            }
-            catch
-            {
-                MessageBox.Show("输入错误！");
-            }
-        }//输入x计算y
-        private void XY(double x, double y)
-        {
-            try
-            {
-                foreach (Series ser in chart1.Series)
-                    if (ser.Name == "X")
-                    {
-                        chart1.Series.Remove(ser);
-                        break;
-                    }
-                foreach (Series ser in chart1.Series)
-                    if (ser.Name == "Y")
-                    {
-                        chart1.Series.Remove(ser);
-                        break;
-                    }
-                Series X = new Series();
-                Series Y = new Series();
-                for (float i = (float)chart1.ChartAreas[0].AxisY.Minimum; i <= chart1.ChartAreas[0].AxisX.Maximum; i += 0.01f)
-                    X.Points.AddXY(i, y);
-                for (float i = (float)chart1.ChartAreas[0].AxisY.Minimum; i <= chart1.ChartAreas[0].AxisY.Maximum; i += 0.01f)
-                    Y.Points.AddXY(x, i);
-                X.Name = "X";
-                Y.Name = "Y";
-                X.Color = Color.Black;
-                Y.Color = Color.Black;
-                X.ChartType = SeriesChartType.Spline;
-                Y.ChartType = SeriesChartType.Spline;
-                chart1.Series.Add(X);
-                chart1.Series.Add(Y);
             }
             catch
             {
