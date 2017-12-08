@@ -2417,7 +2417,5 @@ namespace Calculator
                 MessageBox.Show("代码错误");
             }
         }//声强级
-
-        
     }
 }

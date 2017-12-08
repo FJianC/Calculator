@@ -7975,7 +7975,7 @@
             this.button0a3.Name = "button0a3";
             this.button0a3.Size = new System.Drawing.Size(75, 23);
             this.button0a3.TabIndex = 6;
-            this.button0a3.Text = "绘图";
+            this.button0a3.Text = "函数";
             this.button0a3.UseVisualStyleBackColor = true;
             this.button0a3.Click += new System.EventHandler(this.button0a3_Click);
             // 

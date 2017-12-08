@@ -218,7 +218,7 @@ namespace Calculator
         {
             try
             {
-                if (e.KeyChar == Convert.ToChar(Keys.Enter))
+                if (e.KeyChar == Convert.ToChar(Keys.Enter) && textBox1.Text != "" && flag > 0)
                 {
                     e.Handled = true;//关闭回车声音
                     double x = Convert.ToDouble(textBox1.Text);
@@ -234,6 +234,23 @@ namespace Calculator
                         case 7: y = a * Math.Log(b, x) + c; break;
                     }
                     textBox2.Text = y.ToString("F2");
+                    XY(x, y);
+                }
+                if (e.KeyChar == Convert.ToChar(Keys.Enter) && textBox1.Text == "")
+                {
+                    textBox2.Text = "";
+                    foreach (Series ser in chart1.Series)
+                        if (ser.Name == "X")
+                        {
+                            chart1.Series.Remove(ser);
+                            break;
+                        }
+                    foreach (Series ser in chart1.Series)
+                        if (ser.Name == "Y")
+                        {
+                            chart1.Series.Remove(ser);
+                            break;
+                        }
                 }
             }
             catch
@@ -241,6 +258,42 @@ namespace Calculator
                 MessageBox.Show("输入错误！");
             }
         }//输入x计算y
+        private void XY(double x, double y)
+        {
+            try
+            {
+                foreach (Series ser in chart1.Series)
+                    if (ser.Name == "X")
+                    {
+                        chart1.Series.Remove(ser);
+                        break;
+                    }
+                foreach (Series ser in chart1.Series)
+                    if (ser.Name == "Y")
+                    {
+                        chart1.Series.Remove(ser);
+                        break;
+                    }
+                Series X = new Series();
+                Series Y = new Series();
+                for (float i = (float)chart1.ChartAreas[0].AxisY.Minimum; i <= chart1.ChartAreas[0].AxisX.Maximum; i += 0.01f)
+                    X.Points.AddXY(i, y);
+                for (float i = (float)chart1.ChartAreas[0].AxisY.Minimum; i <= chart1.ChartAreas[0].AxisY.Maximum; i += 0.01f)
+                    Y.Points.AddXY(x, i);
+                X.Name = "X";
+                Y.Name = "Y";
+                X.Color = Color.Black;
+                Y.Color = Color.Black;
+                X.ChartType = SeriesChartType.Spline;
+                Y.ChartType = SeriesChartType.Spline;
+                chart1.Series.Add(X);
+                chart1.Series.Add(Y);
+            }
+            catch
+            {
+                MessageBox.Show("输入错误！");
+            }
+        }
         private void SinEnter_Click(object sender, EventArgs e)
         {
             Sin();
